@@ -1,16 +1,6 @@
 <html>
-  <script>
-    document.getElementById("demo").innerHTML = "Hello JS World! This is my first site.";
-    //<table><tr><td>one</td><td>two</td></tr></table>
-    function Hello(){
-      var first = document.getElementById("test1").value.toUpperCase();
-      var second = document.getElementById("test2").value.toUpperCase();
-      var third = document.getElementById("dd").value.toUpperCase();
-      alert("Hello, the answer is "+ first * second+" . "+ third);
-    }
-  </script>
   
-  <p id="demo"> hello </p>
+  <p id="demo"> hello. </p>
     
   <p><input type = "text" id="test1" /><input type = "text" id="test2" /></p>
   <p>
@@ -24,5 +14,19 @@
   
     
   <p><input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" /></p>
+  
+  
+  <script>
+    document.getElementById("demo").innerHTML = "Hello JS World! NEW TEXT";
+    
+    //<table><tr><td>one</td><td>two</td></tr></table>
+    
+    function Hello(){
+      var first = document.getElementById("test1").value.toUpperCase();
+      var second = document.getElementById("test2").value.toUpperCase();
+      var third = document.getElementById("dd").value.toUpperCase();
+      alert("Hello, the answer is "+ first * second+" . "+ third);
+    }
+  </script>
 
 </html>
