@@ -36,7 +36,7 @@
      <label for="hours">Shift Hours:</label>
     </td>
     <td>
-     <input type = "text" id="labour" />
+     <input type = "text" id="hours" />
     </td>
    </tr> <! –– row 3 ––>
    
@@ -113,9 +113,9 @@
      var third = document.getElementById("dd").value.toUpperCase();
      // alert("Hello, the answer is "+ first * second+" . "+ third);
      
-     var workCount = document.getElementById("workCount");
-     var labour = document.getElementById("labour");
-     var hours = document.getElementById("hours");
+     var workCount = document.getElementById("workCount").value;
+     var labour = document.getElementById("labour").value;
+     var hours = document.getElementById("hours").value;
      var answer = workCount/labour/hours;
      
      document.getElementById("answer").innerHTML = workCount+" / "+labour+" / "+hours+" = "+answer;
