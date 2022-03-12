@@ -90,10 +90,10 @@
    
    <tr> <! –– row 7 ––>
     <td>
-     <label for="Answer">Answer:</label>
+     <label for="answer">Answer:</label>
     </td>
-    <td>
-     <p id="answer">...</p>
+    <td id="answer">
+     ...
     </td>
    </tr> <! –– row 7 ––>
  
@@ -108,16 +108,17 @@
     document.getElementById("demo").innerHTML = 'Hello JS World! NEW TEXT. <table><tr><td>one</td><td>two</td></tr><tr><td>three</td></tr></table><a href="https://www.w3schools.com">W3Schools</a>';
     
     function Hello(){
-      var first = document.getElementById("test1").value.toUpperCase();
-      var second = document.getElementById("test2").value.toUpperCase();
-      var third = document.getElementById("dd").value.toUpperCase();
-      // alert("Hello, the answer is "+ first * second+" . "+ third);
+     var first = document.getElementById("test1").value.toUpperCase();
+     var second = document.getElementById("test2").value.toUpperCase();
+     var third = document.getElementById("dd").value.toUpperCase();
+     // alert("Hello, the answer is "+ first * second+" . "+ third);
      
      var workCount = document.getElementById("workCount").value.toUpperCase();
      var labour = document.getElementById("labour").value.toUpperCase();
      var hours = document.getElementById("hours").value.toUpperCase();
      var answer = workCount/labour/hours;
-      document.getElementById("answer").innerHTML = answer;
+     
+     document.getElementById("answer").innerHTML = answer;
     }
   </script>  
  
