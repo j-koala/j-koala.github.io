@@ -113,12 +113,12 @@
      var third = document.getElementById("dd").value.toUpperCase();
      // alert("Hello, the answer is "+ first * second+" . "+ third);
      
-     var workCount = document.getElementById("workCount").value.toUpperCase();
-     var labour = document.getElementById("labour").value.toUpperCase();
-     var hours = document.getElementById("hours").value.toUpperCase();
+     var workCount = document.getElementById("workCount");
+     var labour = document.getElementById("labour");
+     var hours = document.getElementById("hours");
      var answer = workCount/labour/hours;
      
-     document.getElementById("answer").innerHTML = answer;
+     document.getElementById("answer").innerHTML = workCount+" / "+labour+" / "+hours+" = "+answer;
     }
   </script>  
  
