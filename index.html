@@ -116,9 +116,9 @@
      var workCount = document.getElementById("workCount").value;
      var labour = document.getElementById("labour").value;
      var hours = document.getElementById("hours").value;
-     var answer = workCount/labour/hours;
+     var answer = math.round(workCount/labour/hours*100)/100;
      
-     document.getElementById("answer").innerHTML = workCount+" / "+labour+" / "+hours+" = "+answer;
+     document.getElementById("answer").innerHTML = workCount+" work count / "+labour+" team members / "+hours+" hours = "+answer +" hours";
     }
   </script>  
  
