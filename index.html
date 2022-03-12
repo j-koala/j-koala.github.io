@@ -13,73 +13,34 @@
     </select>
   </p>
   <table>
-   <tr>
+   <tr> <! –– row 1 ––>
     <td>
      <label for="workCount">Work Count:</label>
     </td>
     <td>
      <input type = "text" id="workCount" />
     </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    
-   </tr>
-   <tr>
+   </tr> <! –– row 1 ––>
+
+   <tr> <! –– row 2 ––>
     <td>
      <label for="labour">Labour Hours:</label>
     </td>
     <td>
      <input type = "text" id="labour" />
     </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
+   </tr> <! –– row 2 ––>
 
-   </tr>
-   <tr>
+   <tr> <! –– row 3 ––>
     <td>
      <label for="hours">Shift Hours:</label>
     </td>
     <td>
      <input type = "text" id="labour" />
     </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-
-   </tr>
-   <tr>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-
-   </tr>
-   <tr>
+   </tr> <! –– row 3 ––>
+   
+   <tr> <! –– row 4 ––>
     <td>
     </td>
     <td>
@@ -93,8 +54,9 @@
     <td>
     </td>
 
-   </tr>
-   <tr>
+   </tr> <! –– row 4 ––>
+   
+   <tr> <! –– row 5 ––>
     <td>
     </td>
     <td>
@@ -108,9 +70,36 @@
     <td>
     </td>
 
-   </tr>
-      
+   </tr> <! –– row 5 ––>
+   <tr> <! –– row 6 ––>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+
+   </tr> <! –– row 6 ––>
+
+   
+   <tr> <! –– row 7 ––>
+    <td>
+     <label for="Answer">Answer:</label>
+    </td>
+    <td>
+     <p id="answer">...</p>
+    </td>
+   </tr> <! –– row 7 ––>
+ 
+   
   </table>
+ 
   
     
   <p><input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" /></p>
@@ -122,7 +111,13 @@
       var first = document.getElementById("test1").value.toUpperCase();
       var second = document.getElementById("test2").value.toUpperCase();
       var third = document.getElementById("dd").value.toUpperCase();
-      alert("Hello, the answer is "+ first * second+" . "+ third);
+      // alert("Hello, the answer is "+ first * second+" . "+ third);
+     
+     var workCount = document.getElementById("workCount").value.toUpperCase();
+     var labour = document.getElementById("labour").value.toUpperCase();
+     var hours = document.getElementById("hours").value.toUpperCase();
+     var answer = workCount/labour/hours;
+      document.getElementById("answer").innerHTML = answer;
     }
   </script>  
  
