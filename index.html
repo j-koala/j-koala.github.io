@@ -114,8 +114,8 @@
      //var third = document.getElementById("dd").value.toUpperCase();
      // alert("Hello, the answer is "+ first * second+" . "+ third);
      
-     var workCount = document.getElementById("workCount").value;
-     var headCount = document.getElementById("headCount").value;
+     var workCount = Math.round(document.getElementById("workCount").value);
+     var headCount = Math.round(document.getElementById("headCount").value);
      var hours = document.getElementById("hours").value;
      var answer = Math.round(workCount/headCount/hours*100)/100;
      
