@@ -40,7 +40,8 @@
    </tr> <! –– row 3 ––>
    
    <tr> <! –– row 4 ––>
-    <td id="test">
+    <td>
+     <p id="test"></p>
     </td>
     <td>
     </td>
@@ -106,13 +107,7 @@
    <script>
     document.getElementById("demo").innerHTML = 'Hello JS World! <a href="https://www.twitter.com/J_Koala_">Twitter</a>';
     
-    document.getElementById("test").innerHTML = ' 
-    <Select name="test1" id="test1">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-    </select>';
+    document.getElementById("test").innerHTML = '<Select name="test1" id="test1"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>';
     
     function Hello(){
      //var first = document.getElementById("test1").value.toUpperCase();
