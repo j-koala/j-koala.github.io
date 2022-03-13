@@ -85,19 +85,20 @@
     </td>
 
    </tr> <! –– row 6 ––>
-
-   
+  </table>
+ 
+ <table>
    <tr> <! –– row 7 ––>
     <td>
-     <label for="answer">Answer:</label>
+     <label for="answer">Estimated hours needed:</label>
     </td>
     <td id="answer">
      ...
     </td>
    </tr> <! –– row 7 ––>
- 
+ </table>
    
-  </table>
+
  
   
     
@@ -115,7 +116,7 @@
      // alert("Hello, the answer is "+ first * second+" . "+ third);
      
      var workCount = Math.round(document.getElementById("workCount").value);
-     var headCount = Math.round(document.getElementById("headCount").value);
+     var headCount = document.getElementById("headCount").value;
      var hours = document.getElementById("hours").value;
      var answer = Math.round(workCount/headCount/hours*100)/100;
      
