@@ -43,7 +43,7 @@
     <td>
       <label for="rate">Rate: </label>
     </td>
-    <td id="rate">
+    <td id="rateDropdown">
     </td>
     <td>
     </td>
@@ -121,7 +121,7 @@
 
     //document.getElementById("test").innerHTML = '<Select name="test1" id="test1"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>';
 
-    document.getElementById("rate").innerHTML = MakeNumberDropdown('rate',0,200);
+    document.getElementById("rateDropdown").innerHTML = MakeNumberDropdown('rate',0,200);
 
 
     function Hello(){
@@ -133,7 +133,7 @@
      var workCount = Math.round(document.getElementById("workCount").value);
      var headCount = document.getElementById("headCount").value;
      var hours = document.getElementById("hours").value;
-     var rate = Number(document.getElementById("rate").value);
+     var rate = document.getElementById('rate').value;
      var answer = Math.round(workCount/rate/headCount/hours*100)/100;
 
      document.getElementById("answer").innerHTML = workCount + " work count / " + rate + " rate / "+ headCount + " team members / " + hours + " hours = " + answer + " hours";
