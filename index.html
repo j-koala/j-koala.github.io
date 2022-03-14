@@ -4,17 +4,17 @@
   <p id="demo"> hello. </p>
 
   <p>
-    <Select name="dd" id="dd">
+<!--    <Select name="dd" id="dd">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
       <option value="4">4</option>
-    </select>
+    </select> -->
   </p>
   <table>
    <tr> <! –– row 1 ––>
     <td>
-     <label for="workCount">Work Count:</label>
+     <label for="workCount">Work Count: </label>
     </td>
     <td style="width:100px">
      <input type = "number" id="workCount" />
@@ -23,7 +23,7 @@
 
    <tr> <! –– row 2 ––>
     <td>
-     <label for="headCount">Head Count:</label>
+     <label for="headCount">Head Count: </label>
     </td>
     <td>
      <input type = "number" id="headCount" />
@@ -32,7 +32,7 @@
 
    <tr> <! –– row 3 ––>
     <td>
-     <label for="hours">Shift Hours:</label>
+     <label for="hours">Shift Hours: </label>
     </td>
     <td>
      <input type = "number" id="hours" />
@@ -40,9 +40,10 @@
    </tr> <! –– row 3 ––>
 
    <tr> <! –– row 4 ––>
-    <td id="test">
-    </td>
     <td>
+      <label for="rate">Rate: </label>
+    </td>
+    <td id="rate">
     </td>
     <td>
     </td>
@@ -123,7 +124,7 @@
 
     //document.getElementById("test").innerHTML = '<Select name="test1" id="test1"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>';
 
-    document.getElementById("test").innerHTML = MakeNumberDropdown('test',0,200);
+    document.getElementById("rate").innerHTML = MakeNumberDropdown('rate',0,200);
 
 
     function Hello(){
