@@ -136,9 +136,10 @@
      var workCount = Math.round(document.getElementById("workCount").value);
      var headCount = document.getElementById("headCount").value;
      var hours = document.getElementById("hours").value;
-     var answer = Math.round(workCount/headCount/hours*100)/100;
+     var rate = document.getElementById("rate").value;
+     var answer = Math.round(workCount/rate/headCount/hours*100)/100;
 
-     document.getElementById("answer").innerHTML = workCount + " work count / " + headCount + " team members / " + hours + " hours = " + answer + " hours";
+     document.getElementById("answer").innerHTML = workCount + " work count / " + rate + " rate / "+ headCount + " team members / " + hours + " hours = " + answer + " hours";
     }
   </script>
 
