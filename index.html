@@ -1,8 +1,8 @@
 <html>
- 
-  
+
+
   <p id="demo"> hello. </p>
-    
+
   <p>
     <Select name="dd" id="dd">
       <option value="1">1</option>
@@ -38,7 +38,7 @@
      <input type = "number" id="hours" />
     </td>
    </tr> <! –– row 3 ––>
-   
+
    <tr> <! –– row 4 ––>
     <td id="test">
     </td>
@@ -54,7 +54,7 @@
     </td>
 
    </tr> <! –– row 4 ––>
-   
+
    <tr> <! –– row 5 ––>
     <td>
     </td>
@@ -86,7 +86,7 @@
 
    </tr> <! –– row 6 ––>
   </table>
- 
+
  <table>
    <tr> <! –– row 7 ––>
     <td>
@@ -97,31 +97,47 @@
     </td>
    </tr> <! –– row 7 ––>
  </table>
-   
 
- 
-  
-    
+
+
+
+
   <p><input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" /></p>
 
    <script>
     document.getElementById("demo").innerHTML = 'Hello JS World! <a href="https://www.twitter.com/J_Koala_">Twitter</a>';
-    
-    document.getElementById("test").innerHTML = '<Select name="test1" id="test1"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>';
-    
+
+    //document.getElementById("test").innerHTML = '<Select name="test1" id="test1"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>';
+
+    document.getElementById("test").innerHTML = MakeNumberDropdown('test',0,5);
+
+    function MakeNumberDropdown(elementID, min, max){
+        String htmlCode = '<select name="'+elementID+'"> id="'+elementID+'">';
+
+        for (let i = min; i <= max; i++)
+        {
+          htmlCode += '<option value="'+i+'">'+i+'</option>'
+        }
+
+        htmlCode+='</select>'
+
+
+        return htmlCode
+    }
+
     function Hello(){
      //var first = document.getElementById("test1").value.toUpperCase();
      //var second = document.getElementById("test2").value.toUpperCase();
      //var third = document.getElementById("dd").value.toUpperCase();
      // alert("Hello, the answer is "+ first * second+" . "+ third);
-     
+
      var workCount = Math.round(document.getElementById("workCount").value);
      var headCount = document.getElementById("headCount").value;
      var hours = document.getElementById("hours").value;
      var answer = Math.round(workCount/headCount/hours*100)/100;
-     
+
      document.getElementById("answer").innerHTML = workCount + " work count / " + headCount + " team members / " + hours + " hours = " + answer + " hours";
     }
-  </script>  
- 
+  </script>
+
 </html>
