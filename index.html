@@ -104,26 +104,25 @@
 
   <p><input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" /></p>
 
-   <script>
+     <script>
+     function MakeNumberDropdown(elementID, min, max){
+         String htmlCode = '<select name="'+elementID+'"> id="'+elementID+'">';
+
+         for (let i = min; i <= max; i++)
+         {
+           htmlCode += '<option value="'+ i +'">'+ i +'</option>'
+         }
+         htmlCode+='</select>';
+
+         return htmlCode;
+     }
+
     document.getElementById("demo").innerHTML = 'Hello JS World! <a href="https://www.twitter.com/J_Koala_">Twitter</a>';
 
     //document.getElementById("test").innerHTML = '<Select name="test1" id="test1"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>';
 
     document.getElementById("test").innerHTML = MakeNumberDropdown('test',0,5);
 
-    function MakeNumberDropdown(elementID, min, max){
-        String htmlCode = '<select name="'+elementID+'"> id="'+elementID+'">';
-
-        for (let i = min; i <= max; i++)
-        {
-          htmlCode += '<option value="'+i+'">'+i+'</option>'
-        }
-
-        htmlCode+='</select>'
-
-
-        return htmlCode
-    }
 
     function Hello(){
      //var first = document.getElementById("test1").value.toUpperCase();
