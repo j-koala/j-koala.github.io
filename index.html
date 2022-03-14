@@ -109,14 +109,11 @@
 
      function MakeNumberDropdown(elementID, min, max){
          var htmlCode = '<select name="'+elementID+'" id="'+elementID+'">';
-
-		 for (let i = min; i <= max; i++)
+		     for (let i = min; i <= max; i++)
          {
            htmlCode += '<option value='+ i +'>'+ i +'</option>';
          }
-
          htmlCode += '</select>';
-
          return htmlCode;
      }
 
@@ -136,7 +133,7 @@
      var workCount = Math.round(document.getElementById("workCount").value);
      var headCount = document.getElementById("headCount").value;
      var hours = document.getElementById("hours").value;
-     var rate = document.getElementById("rate").value;
+     var rate = Number(document.getElementById("rate").value);
      var answer = Math.round(workCount/rate/headCount/hours*100)/100;
 
      document.getElementById("answer").innerHTML = workCount + " work count / " + rate + " rate / "+ headCount + " team members / " + hours + " hours = " + answer + " hours";
