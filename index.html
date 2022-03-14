@@ -105,14 +105,16 @@
   <p><input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" /></p>
 
      <script>
-     function MakeNumberDropdown(elementID, min, max){
-         String htmlCode = '<select name="'+elementID+'"> id="'+elementID+'">';
 
-         for (let i = min; i <= max; i++)
+     function MakeNumberDropdown(elementID, min, max){
+         var htmlCode = '<select name="'+elementID+'" id="'+elementID+'">';
+
+		 for (let i = min; i <= max; i++)
          {
-           htmlCode += '<option value="'+ i +'">'+ i +'</option>'
+           htmlCode += '<option value="'+ i +'">'+ i +'</option>';
          }
-         htmlCode+='</select>';
+
+         htmlCode += '</select>';
 
          return htmlCode;
      }
@@ -121,7 +123,7 @@
 
     //document.getElementById("test").innerHTML = '<Select name="test1" id="test1"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></select>';
 
-    document.getElementById("test").innerHTML = MakeNumberDropdown('test',0,5);
+    document.getElementById("test").innerHTML = MakeNumberDropdown('test',0,200);
 
 
     function Hello(){
