@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html langs="en" onclick="jump()">
+
+<head>
+	<meta charset='utf-8'>
+	<title> this is a test </title>
+
+	<link rel = "stylesheet" href="Style.css">
+
+	<script type="text/javascript">
+		// document.write("Hello!");
+		var d = new Date();
+			var minutes = d.getUTCMinutes();
+		
+		if(minutes.length == 1){
+			minutes = "0" + minutes;
+		}
+		alert("It is " + d.getHours() + ":" + minutes + ".\nAre you ready?");
+	</script>
+</head>
+
+<body>
+
+	<h1 id= "playerName"></h1>
+	
+	<div id= "game">
+		<div id= "character"></div>
+		<div id= "block"></div>
+	</div>
+	
+	<div id= "debugArea">
+		<p id= "debugText"></p>
+		<p> </p>
+	</div>
+
+</body>
+<script src = "Script.js"></Script>
+</html>
